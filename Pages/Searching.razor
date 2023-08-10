@@ -1,0 +1,59 @@
+﻿@page "/Search"
+@using MemesLoader
+@inject MemesLoaderClient MemesLoaderClient
+
+<div>
+    <input @bind-value="Search" type="text" placeholder="Search">
+    <button @onclick="LoadSearch">Search!</button>
+</div>
+
+
+@if (memes != null)
+{
+
+    @foreach (var item in memes.Data)
+    {
+        <h1>@(item.Title)</h1>
+        <img src="@(item.Images.Original.Url)"/>
+
+
+
+    }
+
+
+
+
+}
+else
+{
+    <p>Loading.....</p>
+}
+
+
+
+
+
+
+
+
+@code {
+    private MemesLoaderData? memes;
+    public string? Search;
+
+    public async Task LoadSearch()
+    {
+
+        MemesLoaderData response = await MemesLoaderClient.GetSearch(Search);
+        memes = response;
+
+        if (response == null)
+        {
+            memes = response;
+        }
+
+
+    }
+
+
+
+}

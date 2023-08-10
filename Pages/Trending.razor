@@ -1,0 +1,46 @@
+﻿@page "/Trending"
+@using MemesLoader
+@inject MemesLoaderClient MemesLoaderClient
+
+
+
+
+@if (memes != null)
+{
+
+    @foreach (var item in memes.Data)
+    {
+        <h1>@(item.Title)</h1>
+        <img src="@(item.Images.Original.Url)"/>
+
+
+
+    }
+
+
+
+
+}
+else
+{
+    <p>No memes to display.</p>
+}
+
+
+
+
+
+
+
+
+@code {
+    private MemesLoaderData? memes;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        memes = await MemesLoaderClient.GetTrending();
+    }
+
+
+}

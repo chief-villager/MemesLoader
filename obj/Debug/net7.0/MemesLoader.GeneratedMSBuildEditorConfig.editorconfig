@@ -36,6 +36,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWVtZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/admin/Documents/Projects/DotNet/MemesLoader/Pages/Searching.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2VhcmNoaW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/admin/Documents/Projects/DotNet/MemesLoader/Pages/Trending.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVHJlbmRpbmcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/admin/Documents/Projects/DotNet/MemesLoader/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
